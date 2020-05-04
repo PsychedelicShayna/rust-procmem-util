@@ -1,0 +1,8 @@
+[package]
+name = "rust_procmem_lib"
+version = "1.0.0"
+authors = ["MisanthropicShayna"]
+edition = "2018"
+
+[dependencies]
+winapi = { version = "0.3.8", "features" = ["winuser", "tlhelp32", "handleapi", "ntdef", "processthreadsapi", "winnt", "memoryapi"] }

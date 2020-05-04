@@ -1,0 +1,12 @@
+[package]
+name = "rust-procmem-lib"
+version = "1.0.0"
+authors = ["MisanthropicShayna"]
+edition = "2018"
+
+[workspace]
+members = ["rust_procmem_lib"]
+
+[dependencies]
+rust_procmem_lib = { path = "rust_procmem_lib" }
+winapi = { version = "0.3.8", "features" = ["winuser", "tlhelp32", "handleapi", "ntdef"] }
